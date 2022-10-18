@@ -40,7 +40,7 @@ aalhendi1707/phylogicndt:latest
 
 `-e BLOCKLIST_CLUSTER` List cluster ids to blacklist from BuildTree and CellPopulation. Default used by algorithm None.
 
-`-v /path/to/data` The path to your Input/output directory. This directory must contains (1) Somatic variants in maf file format, (2) `MySimulation_input.sif`  as discribed in below, (3) `Driver_genes_v1.0.txt` list for dirver genes that would be used to annotate for driver mutations. The outputs will be written to this directory as well.
+`-v /path/to/data` The path to your Input/output directory. This directory must contains (1) Somatic variants in maf file format for each sample [required], (2) `MySimulation_input.sif` [required] as discribed in below, (3) `Driver_genes_v1.0.txt` list for dirver genes that would be used to annotate for driver mutations [optional], as PhylogicNDT already comes with list of driver genes. The outputs will be written to this directory as well.
 
 
 ## Cluster
