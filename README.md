@@ -24,7 +24,7 @@ aalhendi1707/phylogicndt:latest
 ```
 
 ## Enviroment variables are:
-`-e MODULE` to select running module. This version of docker container only support `Cluster` and `BuildTree`. Default used by algorithm BuildTree.
+`-e MODULE` to select running module. This version of docker container only support `Cluster` and `BuildTree`. Default used by algorithm Cluster.
 
 `-e PATIENT_ID` to set Patient/Case ID.
 
