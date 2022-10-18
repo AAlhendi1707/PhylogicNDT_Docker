@@ -61,9 +61,6 @@ Below is the accepted format for MAF file
 | CASZ1 | 1 | 10705011 | G | C | 200 | 13 | p.F1277L | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
 | CAMK2N1 | 1 | 20811852 | G | C | 66 | 31 | p.Y7X | Nonsense_Mutation | SNP | 0 | 1.4827313901312 | 
 | RPL11 | 1 | 24020360 | T | C | 250 | 136 | p.V74A | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
-| MACO1 | 1 | 25785293 | A | C | 181 | 101 | p.K355T | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
-| SZT2 | 1 | 43890459 | C | T | 47 | 301 | p.R826X | Nonsense_Mutation | SNP | 0 | 1.4827313901312 | 
-| BEST4 | 1 | 45250052 | C | T | 183 | 10 | p.V418I | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
 | CDKN2C | 1 | 51436117 | A | T | 53 | 230 | p.Q26L | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
 | ECHDC2 | 1 | 53387259 | C | G | 164 | 14 | p.E29D | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
 | AKNAD1 | 1 | 109395196 | C | - | 45 | 189 | p.D31Ifs*14 | Frame_Shift_Del | SNP | 0 | 1.4827313901312 | 
