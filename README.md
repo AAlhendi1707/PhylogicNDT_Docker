@@ -11,6 +11,7 @@ PhylogicNDT image can be found on [aalhendi1707/phylogicndt](https://hub.docker.
 ## How to use this image
 ```
 docker run -it --rm \
+-e MODULE="Cluster" \
 -e PATIENT_ID="PatientXX" \
 -e N_ITER=1000 \
 -e MIN_COVERAGE=30 \
@@ -23,7 +24,9 @@ aalhendi1707/phylogicndt:latest
 ```
 
 ## Enviroment variables are:
-`-e PATIENT_ID="PatientX" ` to set Patient/Case ID.
+`-e MODULE` to select running module. This version of docker container only support `Cluster` and `BuildTree`. Default used by algorithm BuildTree.
+
+`-e PATIENT_ID` to set Patient/Case ID.
 
 `-e N_ITER" ` Number iterations that will be used in Cluster and BuildTree modules. Default used by algorithm is 1000.
 
@@ -41,15 +44,24 @@ aalhendi1707/phylogicndt:latest
 
 
 ## Cluster
-When running the Cluster module, I prefer to use the sif file option. The command line code is much cleaner, and the format provides a much more organized way to keep track of your input files and values.
+When running the Cluster module, prefer to use the sif file option. The command line code is much cleaner, and the format provides a much more organized way to keep track of your input files and values.
 
 Sif file has 4 required columns, and 1 optional column:
 
 - **sample_id**: the ID of each sample from the patient.
-- **maf_fn**: a truncated version of the MAF file with additional CCF information.
+- **maf_fn**: a truncated version of the MAF file with/without additional CCF information.
 - **seg_fn (optional)**: a truncated version of allelic seg calls (from ASCAT)
 - **purity**: the purity of each tumor sample from the patient (from ASCAT)
 - **timepoint**: if temporal ordered by biopsy time, if spatial then arbitrary
+
+Below is the accepted format for MAF file
+
+| Hugo_Symbol | Chromosome | Start_position | Reference_Allele | Tumor_Seq_Allele2 | t_ref_count | t_alt_count | Protein_change | Variant_Classification | Variant_Type | local_cn_a1 | local_cn_a2 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| TTLL10 | chr1 | 1115908 | C | T | 242 | 0 | p.D111D | Silent | SNP | 1 | 1 |
+| ANKRD65 | chr1 | 1355724 | G | T | 51 | 0 | p.T153K | Missense_Mutation | SNP | 1 | 1 |
+| PRDM16 | chr1 | 3342162 | G | T | 365 | 0 | p.R986L | Missense_Mutation | SNP | 1 | 1 |
+
 
 ## BuildTree
 The BuildTree inputs are just a subset of the outputs from the Cluster module:
@@ -57,5 +69,4 @@ Again, we need to proide the patient ID and the sif file. A description of the m
 
 - **mutation_ccf_file**: This file contains the cluster assignment of each mutation in the MAF in the maf_fn file.
 - **cluster_ccf_file**: This file contains CCF information on each cluster, such as the average CCF of mutations in the cluster and the probability distribution of the cluster CCF.
-
 
