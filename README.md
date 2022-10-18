@@ -32,7 +32,7 @@ aalhendi1707/phylogicndt:latest
 
 `-e MIN_COVERAGE` Mutations with coverage lower than this will not be used to cluster and instead re-assigned after dp clustering.
 
-`-e CALC_CCF` Flag must be set to calc_ccf and sample purity must be provided. Also local copy number must be attached to each mutation in the maf with columns named `local_cn_a1` and `local_cn_a2`.
+`-e CALC_CCF` Flag must be set to calc_ccf and sample purity must be provided. Also local copy number must be attached to each mutation in the maf with columns named `local_cn_a1` and `local_cn_a2` represent minor and major allele fractions respectively.
 
 `-e IMPUTE` Assume 0 ccf for missing mutations. *Not recommanded*, instead do use **SNV.impute.R** script.
 
@@ -40,7 +40,7 @@ aalhendi1707/phylogicndt:latest
 
 `-e BLOCKLIST_CLUSTER` List cluster ids to blacklist from BuildTree and CellPopulation. Default used by algorithm None.
 
-`-v /path/to/data` The path to your Input/output directory. This directory must contains (1) Somatic variants in maf file format for each sample [required], (2) `MySimulation_input.sif` [required] as discribed in below, (3) `Driver_genes_v1.0.txt` list for dirver genes that would be used to annotate for driver mutations [optional], as PhylogicNDT already comes with list of driver genes. The outputs will be written to this directory as well.
+`-v /path/to/data` The path to your Input/output directory. This directory must contains (1) Somatic variants in maf file format for each sample [required], (2) `MySimulation_input.sif` [required] as described in below, (3) `Driver_genes_v1.0.txt` list for dirver genes that would be used to annotate for driver mutations [optional], as PhylogicNDT already comes with list of driver genes. The outputs will be written to this directory as well.
 
 
 ## Cluster
@@ -50,8 +50,8 @@ Sif file has 4 required columns, and 1 optional column:
 
 - **sample_id**: the ID of each sample from the patient.
 - **maf_fn**: a truncated version of the MAF file with/without additional CCF information.
-- **seg_fn (optional)**: a truncated version of allelic seg calls (from ASCAT)
-- **purity**: the purity of each tumor sample from the patient (from ASCAT)
+- **seg_fn (optional)**: a truncated version of allelic seg calls.
+- **purity**: the purity of each tumor sample from the patient.
 - **timepoint**: if temporal ordered by biopsy time, if spatial then arbitrary
 
 Below is the accepted format for MAF file
