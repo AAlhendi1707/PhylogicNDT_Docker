@@ -58,9 +58,19 @@ Below is the accepted format for MAF file
 
 | Hugo_Symbol | Chromosome | Start_position | Reference_Allele | Tumor_Seq_Allele2 | t_ref_count | t_alt_count | Protein_change | Variant_Classification | Variant_Type | local_cn_a1 | local_cn_a2 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| TTLL10 | chr1 | 1115908 | C | T | 242 | 0 | p.D111D | Silent | SNP | 1 | 1 |
-| ANKRD65 | chr1 | 1355724 | G | T | 51 | 0 | p.T153K | Missense_Mutation | SNP | 1 | 1 |
-| PRDM16 | chr1 | 3342162 | G | T | 365 | 0 | p.R986L | Missense_Mutation | SNP | 1 | 1 |
+| CASZ1 | 1 | 10705011 | G | C | 200 | 13 | p.F1277L | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
+| CAMK2N1 | 1 | 20811852 | G | C | 66 | 31 | p.Y7X | Nonsense_Mutation | SNP | 0 | 1.4827313901312 | 
+| RPL11 | 1 | 24020360 | T | C | 250 | 136 | p.V74A | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
+| MACO1 | 1 | 25785293 | A | C | 181 | 101 | p.K355T | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
+| SZT2 | 1 | 43890459 | C | T | 47 | 301 | p.R826X | Nonsense_Mutation | SNP | 0 | 1.4827313901312 | 
+| BEST4 | 1 | 45250052 | C | T | 183 | 10 | p.V418I | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
+| CDKN2C | 1 | 51436117 | A | T | 53 | 230 | p.Q26L | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
+| ECHDC2 | 1 | 53387259 | C | G | 164 | 14 | p.E29D | Missense_Mutation | SNP | 0 | 1.4827313901312 | 
+| AKNAD1 | 1 | 109395196 | C | - | 45 | 189 | p.D31Ifs*14 | Frame_Shift_Del | SNP | 0 | 1.4827313901312 | 
+| HAO2 | 1 | 119923748 | C | G | 246 | 110 | p.R14G | Missense_Mutation | SNP | 0.421210864983179 | 2.16034289004054 | 
+| ACP6 | 1 | 147141987 | G | A | 114 | 88 | p.R62W | Missense_Mutation | SNP | 2.30880923350471 | 2.30880923350471 | 
+| SNX27 | 1 | 151611456 | TACCT | - | 497 | 0 | p.V135Afs*3 | Frame_Shift_Del | DEL | 2.30880923350471 | 2.30880923350471 | 
+| POU2F1 | 1 | 167343450 | A | T | 371 | 0 | p.S159C | Missense_Mutation | SNP | 2.95035229843327 | 4.3441852902848 |
 
 
 ## BuildTree
