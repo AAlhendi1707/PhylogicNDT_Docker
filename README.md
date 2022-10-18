@@ -3,7 +3,7 @@
 ## Description
 PhylogicNDT container contains complete build for Dockerfile of PhylogicNDT from [Broad Institute](https://github.com/broadinstitute/PhylogicNDT) that can be easily used to analyse tumour evolution. It has been built to automatically  run `Cluster` and `BuildTree` modules, which required to determine the phylogenetic relationship between tumour subclones.
 
-![PhylogicNDT Container](https://github.com/AAlhendi1707/WES/blob/main/PhylogicNDT/PhylogicNDT.drawio.png)
+![PhylogicNDT Container](https://github.com/AAlhendi1707/PhylogicNDT_Docker/blob/main/PhylogicNDT.drawio.png)
 
 ## Docker image avaiablity
 PhylogicNDT image can be found on [aalhendi1707/phylogicndt](https://hub.docker.com/repository/docker/aalhendi1707/phylogicndt) on dockerhub, and it is only for non-commersial use.
