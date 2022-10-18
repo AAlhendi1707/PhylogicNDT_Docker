@@ -34,7 +34,7 @@ aalhendi1707/phylogicndt:latest
 
 `-e CALC_CCF` Flag must be set to calc_ccf and sample purity must be provided. Also local copy number must be attached to each mutation in the maf with columns named `local_cn_a1` and `local_cn_a2` represent minor and major allele fractions respectively.
 
-`-e IMPUTE` Assume 0 ccf for missing mutations. *Not recommanded*, instead do use **SNV.impute.R** script.
+`-e IMPUTE` Assume 0 ccf for missing mutations.
 
 `-e BUILDTREE_CCF_THRESHOLD` ccf threshold for blacklisting clusters for a BuildTree and Cell Population. Default used by algorithm is 0.1.
 
