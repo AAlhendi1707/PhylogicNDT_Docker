@@ -6,7 +6,11 @@ PhylogicNDT container contains complete build for Dockerfile of PhylogicNDT from
 ![PhylogicNDT Container](https://github.com/AAlhendi1707/PhylogicNDT_Docker/blob/main/PhylogicNDT.drawio.png?raw=true)
 
 ## Docker image avaiablity
-PhylogicNDT image can be found on [aalhendi1707/phylogicndt](https://hub.docker.com/repository/docker/aalhendi1707/phylogicndt) on dockerhub, and it is only for non-commersial use.
+PhylogicNDT image can be found on [aalhendi1707/phylogicndt](https://hub.docker.com/repository/docker/aalhendi1707/phylogicndt), and it is only for non-commersial use. To pull the latest version of it, please run this command on terminal:
+
+```
+docker pull aalhendi1707/phylogicndt:latest
+```
 
 ## How to use this image
 ```
